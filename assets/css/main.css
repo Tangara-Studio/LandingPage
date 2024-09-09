@@ -38,7 +38,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    text-transform: capitalize;
     border: none;
     outline: none;
     -webkit-transition: all 0.2s linear;
@@ -230,6 +229,7 @@ header #menu-btn:hover{
 /*--------------------- 4- Home Area CSS (Start) ---------------------*/
 .home{
     padding: 0rem 5%;
+    margin-top: 80px;
     background-color: var(--white);
     min-height: 100vh;
 }
@@ -1023,7 +1023,7 @@ header #menu-btn:hover{
 }
 
 .contact-info .info-item h4{
-    font-size: 1.8rem;`
+    font-size: 1.8rem;
     color: var(--black);
 }
 
@@ -1102,6 +1102,29 @@ footer{
     background-color: var(--darkgreen);
     padding: 2rem 0;
     text-align: center;
+}
+
+footer .contact-info {
+    text-align: center;
+}
+
+footer .contact-info p {
+    color: var(--white);
+}
+
+footer .contact-info .info-item .detail {
+    justify-content: center;
+}
+footer .contact-info .info-item .detail .fa-phone {
+    color: var(--white);
+}
+
+footer .contact-info .info-item .detail .fa-envelope {
+    color: var(--white);
+}
+
+footer .contact-info .info-item .detail p {
+    color: var(--white);
 }
 
 footer .social{

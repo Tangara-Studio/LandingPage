@@ -81,8 +81,8 @@
                 </div>
             </div>
 
-            <div class="image">
-                <img src="assets/images/Home/Home-Image.png" alt="Home-Image">
+            <div class="carousel-container">
+                <img id="carousel-img" src="assets/images/TangaraCharacters/TS-dino.png" alt="Home-Carousel">
             </div>
 
         </div>
@@ -167,7 +167,12 @@
             <h2><span>Currently</span> Working On</h2>
         </div>
 
-        <iframe frameborder="0" src="https://itch.io/embed/2311735?linkback=true&amp;fg_color=020202&amp;link_color=00A981" width="552" height="167"><a href="https://tangara-studio.itch.io/dinopirates-from-inner-space">Dinopirates from Inner Space by Tangara Studio</a></iframe>
+        <iframe frameborder="10"
+            src="https://itch.io/embed/2311735?linkback=true&amp;fg_color=020202&amp;link_color=00A981" width="552"
+            height="167">
+            <a href="https://tangara-studio.itch.io/dinopirates-from-inner-space">Dinopirates from Inner Space by
+                Tangara Studio</a>
+        </iframe>
 
     </section>
     <!-------------------- Currently Working on (End) -------------------->
@@ -191,18 +196,28 @@
                     <h4>Phone:</h4>
                     <div class="detail">
                         <div class="fas fa-phone"></div>
-                        <a href="tel:+56987682334">+56 9 8768 2334</p>
+                        <a href="tel:+56987682334">+56 9 8768 2334</a>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>email:</h4>
+                    <h4>E-mail:</h4>
                     <div class="detail">
                         <div class="fas fa-envelope"></div>
-                        <a href="mailto:hello@tangara.studio">hello@tangara.studio</p>
+                        <a href="mailto:hello@tangara.studio">hello@tangara.studio</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>Address:</h4>
+                    <div class="detail">
+                        <div class="fas fa-compass"></div>
+                        <a href="https://maps.app.goo.gl/rGtzah2mjFedoEVE9">Reñaca Norte 265, Of 510, Viña del Mar,
+                            Chile</a>
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
 
@@ -217,19 +232,8 @@
 
             <!-- Este código fue copiado y pegado de Mailchimp para embeber el formulario -->
             <div id="mc_embed_shell">
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: #fff;
-                        false;
-                        clear: left;
-                        /* font: 14px Helvetica, Arial, sans-serif; */
-                        width: auto;
-                    }
+                <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
 
-                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
                 <div id="mc_embed_signup">
                     <form
                         action="https://gmail.us22.list-manage.com/subscribe/post?u=7eab723827e5bf510007f5cee&amp;id=c3466f1f83&amp;f_id=00d2d6e1f0"
@@ -277,11 +281,6 @@
 
     <!-------------------- Footer Area (Start) -------------------->
     <footer>
-        <div>
-            <h2>Address</h2>
-            <p>Reñaca Norte 265, Of 510</p>
-            <p>Viña del Mar, Chile</p>
-        </div>
 
         <div class="social">
             <!-- <a href="#" class="fab fa-facebook-f"></a> -->
@@ -323,12 +322,14 @@
     <!-- Typed Script -->
     <script>
         var typed = new Typed('.typing-text', {
-
             strings: ['Narrative Experiences', 'Videogames', 'Tailor-made Solutions', 'Gamification'],
             typeSpeed: 120,
             loop: true
         });
     </script>
+
+    <!-- Carousel -->
+    <script src="assets/js/carrousel.js"></script>
 
 </body>
 

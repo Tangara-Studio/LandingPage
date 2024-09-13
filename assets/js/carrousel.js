@@ -19,13 +19,16 @@ function changeImage() {
         // Cambia la imagen
         imgElement.src = images[currentIndex];
 
-        // Vuelve a hacer visible la nueva imagen
-        imgElement.classList.remove('invisible');
-        imgElement.classList.add('visible');
+        setTimeout(() => {
+            // Vuelve a hacer visible la nueva imagen
+            imgElement.classList.remove('invisible');
+            imgElement.classList.add('visible');
 
-        // Cambia el índice de la imagen actual
-        currentIndex = (currentIndex + 1) % images.length; // Reinicia al principio al llegar al final
-    }, 1000); // Tiempo igual al de la animación
+            // Cambia el índice de la imagen actual
+            currentIndex = (currentIndex + 1) % images.length; // Reinicia al principio al llegar al final
+        }, 100);
+        
+    }, 900); // Tiempo igual al de la animación
 }
 
 // Inicializa el carrusel con la primera imagen
